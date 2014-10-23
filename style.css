@@ -1,0 +1,315 @@
+/*-----------------------------------*\
+
+	Toast
+	A Simple CSS Framework
+	=================================
+
+	Values you may want to change:
+	- .container { max-width:; }
+	- p { margin-bottom:; }
+	- html { font:; }
+
+	Remember: no framework will be as
+	good as a custom built, per-
+	project	one. Toast and other
+	frameworks are best used for
+	rapid prototyping.
+
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+	$RESET
+\*-----------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/*-----------------------------------*\
+	$GRID
+\*-----------------------------------*/
+
+.container {
+	/* Whatever you want. They’re your oats. */
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+}
+#main {
+	margin-top: 80px;
+}
+.grid {
+	margin-left: -3%;
+	max-width: 100%;
+}
+
+.unit {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	/* Clearfix */
+	overflow: hidden;
+	*overflow: visible;
+}
+
+	.unit.demo {
+		background-color: #fff8eb;
+		height: 48px;
+		height: 3rem;
+		margin-bottom: 24px;
+		margin-bottom: 1.5rem;
+	}
+
+.span-grid {
+	width: 100%;
+}
+
+.one-of-two { 
+	width: 47%;
+	margin-right: 20px;
+}
+
+.one-of-three { width: 30.36%; }
+.two-of-three { width: 63.666666666%; }
+
+.one-of-four { width: 22.05%; }
+.three-of-four { width: 72%; }
+
+.one-of-five { width: 17.07%; }
+.two-of-five { width: 37%; }
+.three-of-five { 
+	width: 57%;
+	margin-right: 30px; 
+}
+.four-of-five { width: 77%; }
+
+@media screen and (max-width: 650px) {
+	.grid {
+		margin-left: 0;
+		max-width: none;
+	}
+
+	.unit {
+		width: auto;
+		margin-left: 0;
+		display: block;
+	}
+}
+
+/*-----------------------------------*\
+	$TYPE
+
+	Works off the assumption of a 1.5
+	line height @ 20px. Again, change
+	as necessary.
+\*-----------------------------------*/
+
+p, .p, ul, ol, hr, table, form, pre,
+h1, .alpha, h2, .beta {
+	margin-bottom: 30px;
+	margin-bottom: 1.5rem;
+}
+
+h1 {
+	font-size: 1em;
+	font-weight: 700;
+	letter-spacing: 0px;
+	text-align: left;
+	text-transform: uppercase;
+	color:#fff;
+	margin-top: 15px;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.125em;
+	font-weight: 300;
+	line-height: 1;
+	margin-bottom: 20px;
+	color:#fff;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	color:#962e2e;
+}
+
+.rule {
+	border-bottom: 1px solid rgba(255,255,255, .2);
+	border-left: none;
+	border-right: none;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+/*-----------------------------------*\
+	$MAIN
+\*-----------------------------------*/
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background: url(img/bg.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+ 	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-size: 1.15em;
+	color: #fff;
+	line-height: 1.5em;
+}
+
+img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+a {
+	color: #f09868;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+
+}
+
+.large-number {
+	font-size: 5.625em;
+	font-weight: 100;
+	color: #fff;
+}
+
+.small-number {
+	font-size: 1.625;
+	font-weight: 300;
+	color: #fff;
+}
+
+.spacer {
+	margin-bottom: 60px;
+}
+.header {
+	width: 100%;
+	background: #111;
+	height: 50px;
+}
+
+.footer {
+	background: #000;
+	width: 100%;
+	margin-top: 0px;
+	padding: 40px 0px 20px 0px;
+}
+
+.footer p {
+	font-size: 1em;
+	color:#999;
+}
+
+.footer a {
+	color:#b4acac;
+	text-decoration: none;
+}
+
+#profile {
+	position: fixed; 
+	top 0;
+	width: 380px;
+	z-index: 1000;
+}
+
+.right {
+	 text-align: right;
+	 float: right;
+}
+
+.center {
+	text-align: center;
+}
+
+#block {
+	display: inline-block;
+}
+
+.song-large {
+	font-size: 2.625em;
+	background: #fff;
+	color: #333;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+}
+#song-number {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.title {
+	font-size: 1.5em;
+	font-weight: 400;
+	background: #fff;
+	color: #333;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+}
+
+.sub-title {
+	font-size: 1em;
+	background: #fff;
+	color: #999;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+}
+
+::selection {
+	background: rgba(238,204,78,0.5);
+	}
+::-moz-selection {
+	background: rgba(238,204,78,0.5);
+}
+
+@media screen and (max-width: 650px) {
+	html {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	html {
+		font-size: 100%;
+	}
+	.container {
+		padding: 40px;
+	}
+	.one-of-two { 
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 1.125em;
+	}
+	.top p {
+		font-size: 1.125em;
+	}
+	.button {
+		margin-bottom: 0px;
+	}
+	h2 {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+}
