@@ -181,7 +181,7 @@ img {
 	margin-bottom: 10px;
 }
 a {
-	color: #43a7eb;
+	color: #ceab8f;
 	text-decoration: none;
 }
 
@@ -238,6 +238,11 @@ a:hover {
 .footer img {
 	width: auto;
 
+}
+
+.content {
+	background: #fff;
+	padding: 15px;
 }
 
 .player {
@@ -349,8 +354,11 @@ a:hover {
 	bottom: 10px;
 }
 
+.song {
+	margin-bottom: 20px;
+}
 .song-large {
-	font-size: 2.250em;
+	font-size: 2em;
 	background: #fff;
 	color: #333;
 	padding: 10px 15px;
@@ -359,6 +367,54 @@ a:hover {
 #song-number {
 	display: inline-block;
 	margin-right: 20px;
+}
+.shows h2 {
+	margin-bottom: 10px;
+}
+.shows-date {
+	background: #fff;
+	padding: 10px 20px 10px 20px;
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+}
+.date-line {
+	border-top: 1px solid #ccc;
+	width: 100%;
+	text-align: center;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.shows-location {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.year {
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.day {
+	color: #999;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+.shows {
+	border-bottom: 1px solid rgba(255,255,255, .2);
+	border-left: none;
+	border-right: none;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.shows-date {
+	background: #fff;
+	display: inline-block;
+}
+
+.shows h2 {
+	font-size: 1.625em;
+	font-weight: 600;
 }
 
 .title {
