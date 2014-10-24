@@ -392,6 +392,14 @@ a:hover {
 	padding: 10px 15px;
 	margin-bottom: 10px;
 }
+.song-large a {
+	color: #333;
+}
+
+.song-large a:hover {
+	color: #ceab8f;
+}
+
 .song-links p {
 	margin-bottom: 10px;
 }
