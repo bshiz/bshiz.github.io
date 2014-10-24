@@ -42,7 +42,7 @@
 	padding: 0px 0px 0px 0px;
 }
 #main {
-	margin-top: 80px;
+	margin-top: 40px;
 }
 .grid {
 	margin-left: -3%;
@@ -162,12 +162,14 @@ html {
 }
 
 body {
-	background: url(img/bg.png) no-repeat center center fixed; 
+	background: #422e25;
+	xbackground: url(img/bg.png) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
  	-o-background-size: cover;
  	background-size: cover;
  	font-family: 'Roboto', sans-serif;
+ 	font-weight: 300;
 }
 
 p {
@@ -188,6 +190,10 @@ a {
 a:hover {
 	color: #fff;
 
+}
+
+.grey {
+	color: #999;
 }
 
 .large-number {
@@ -261,6 +267,7 @@ a:hover {
 .profile p {
 	color: #333;
 	font-size: .825em;
+	margin-bottom: 20px;
 }
 
 .profile h1 {
@@ -288,7 +295,18 @@ a:hover {
 	position: fixed; 
 	top 0;
 	width: 380px;
-	z-index: 1000;
+}
+
+.member {
+	text-align: center;	
+	width: 29%;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.member p {
+	margin-bottom: 0px;
 }
 
 .show {
@@ -330,11 +348,21 @@ a:hover {
 	 float: right;
 }
 
+
+#right {
+	 text-align: right;
+	 float: right;
+}
+
 .center {
 	text-align: center;
 }
 
 #block {
+	display: inline-block;
+}
+
+.block {
 	display: inline-block;
 }
 
@@ -351,7 +379,7 @@ a:hover {
 .player-text-small {
 	position: absolute;
 	left: 10px;
-	bottom: 10px;
+	bottom: 0px;
 }
 
 .song {
@@ -364,12 +392,51 @@ a:hover {
 	padding: 10px 15px;
 	margin-bottom: 10px;
 }
+.song-links p {
+	margin-bottom: 10px;
+}
+
 #song-number {
 	display: inline-block;
 	margin-right: 20px;
 }
+
+.comments {
+	background: #fff;
+	padding: 10px 20px 30px 20px;
+}
+
+.comments h1 {
+	font-size: 2em;
+	font-style: italic;
+	font-weight: 300;
+	text-transform: none;
+	color: #333;
+}
+
+.comments a:hover {
+	color: #333;
+}
+
+.comment {
+	padding: 15px 0px 15px 0px;
+	border-bottom: 1px solid #eee;
+
+}
+
+.comment img {
+	width: 40px;
+}
+
+.comment p {
+	color: #333;
+	font-size: 1em;
+	margin-bottom: 0px;
+}
+
 .shows h2 {
 	margin-bottom: 10px;
+	font-size: 2em;
 }
 .shows-date {
 	background: #fff;
@@ -425,6 +492,14 @@ a:hover {
 	padding: 10px 15px;
 	margin-bottom: 10px;
 	display: inline-block;
+}
+
+.title a {
+	color: #333;
+}
+
+.title a:hover {
+	color: #ceab8f;
 }
 
 .sub-title {
